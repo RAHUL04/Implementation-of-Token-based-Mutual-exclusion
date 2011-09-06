@@ -28,8 +28,3 @@ The project required us to pass the token between clients where the token was se
 
 The code was written carefully handling each unique case as per the specification. The Start.java initiates the clients on remote machines and ends. The skb.java program initiates three threads - one for multicasting requests, one for recieveing the requests. The third one handles token passing or recieveing based on the client's status and sends the token in a unicast fashin by establishing a socket with that client (obtaines as first element of the queue). The output request.log is printed by the last client checking if all other clients were served. The output is carried by a string attached to the token and written to output file by the last client who was served.
 
-REQUEST TO TA : Kindly note that Start.java ends immediately but the utput file is not created IMMEDIATELY. Based on the number of clients and number of requests, it takes SOMETIME FOR THE OUTPUT FILE TO BE GENERATED. Do not conclude that since there is no output file immediately, that my program is wrong. I have tested my program with 10 clients and 50 requests and it still works fine with the output being generated in a few seconds.
-
-The project was a good learning curve in terms of multicasting techniques. Use of vecotrs,arraylists and queue packages was also a part of the learning The knowledge of java packages comes handy while implementing the projects and new things can be learnt easily. Oracle Site's writeups and tutorials were helpful in understanding and knowing more about Java packages. The project helps us to understand and visualize the theoretical concepts in a better way.
-
-
